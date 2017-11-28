@@ -1,0 +1,12 @@
+<h1> Listing clubs</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+	</tr>
+
+	<% @clubs.each do |club| %>
+		<tr>
+		<td><%=club.name%></td>
+		</td>
+	<% end %>

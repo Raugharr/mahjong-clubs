@@ -1,0 +1,10 @@
+<%= form_with(model: @club.rules.build, local: true, url: club_rules_path(club_id: @club.id)) do |form| %>
+	<p>
+		<%= form.label :text %>
+		<%= form.text_field :text %>
+	</p>
+	<p>
+		<%= form.submit %>
+	</p>
+<% end %>
+

@@ -1,0 +1,35 @@
+// Place all the styles related to the Clubs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-color: rgba(38,51,51,.75);
+body {
+	background-color: #f0f4f4;
+	color: $primary-color;
+}
+
+nav {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 200px;
+		background-color: #f1f1f1;
+	}
+}
+
+ul.nav li {
+	display: inline;
+}
+
+.header {
+	text-align: center;
+}
+
+strong {
+	color: rgba(38,51,51,.75);
+}
+
+.page-divider {
+	border-bottom-width: 2px;
+	border-bottom: 1px solid #FFF;
+}

@@ -1,0 +1,8 @@
+<table>
+	<% @club.rules.each do |rule| %>
+		<tr>
+		<td><%=rule.text%></td>
+		<td><%= link_to "Delete", club_rule_path(club_id: @club.id, id: rule.id), method: :delete %></td>
+		</tr>
+	<% end %>
+</table>

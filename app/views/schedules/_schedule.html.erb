@@ -1,0 +1,11 @@
+<table>
+	<% @club.schedules.each do |schedule| %>
+		<tr>
+			<td><%=schedule.day.capitalize%></td>
+			<td><%= ScheduleHelper.time(schedule.start) %></td>
+			<td><%= ScheduleHelper.time(schedule.end) %></td>
+			<td><%= link_to "Delete", club_schedule_path(club_id: @club.id, id: schedule.id), method: :delete %></td>
+		</tr>
+	<% end %>
+</table>
+

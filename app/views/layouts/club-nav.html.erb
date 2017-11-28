@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<%= csrf_meta_tags %>
+
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<%= stylesheet_link_tag "club-nav" %>
+		<title><%= @title %></title>
+	</head>
+	<body>
+		<strong><%= @title %></strong>
+		<% if @club.nil? == false %>
+		<ul class='nav'>
+			<li><%= link_to "Main", club_path(id: @club.id) %></li>
+			<li><%= link_to "Schedules", club_schedules_path(club_id: @club.id) %></li>
+			<li><%= link_to "Rules", club_rules_path(club_id: @club.id)%></li>
+		</ul>
+		<% end %>
+		<%= yield %>
+	</body>
+</html>

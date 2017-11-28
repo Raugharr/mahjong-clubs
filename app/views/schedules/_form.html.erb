@@ -1,0 +1,22 @@
+<%= form_with(model: @club.schedules.build, local: true, url: club_schedules_path(club_id: @club.id)) do |form| %>
+	<p>
+		<%= form.label :repeat %>
+		<%= form.check_box :repeat %>
+	</p>
+	<p>
+		<%= form.label :day %>
+		<%= form.text_field :day %>
+	</p>
+	<p>
+		<%= form.label :start%>
+		<%= form.time_field :start %>
+	</p>
+	<p>
+		<%= form.label :end%>
+		<%= form.time_field :end %>
+	</p>
+	<p>
+		<%= form.submit %>
+	</p>
+<% end %>
+
