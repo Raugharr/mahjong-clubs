@@ -1,0 +1,8 @@
+= form_for current_user, url: settings_path do |f|
+  = f.label :first_name
+  = f.text_field :first_name
+  = f.label :last_name
+  = f.text_field :last_name
+  = f.submit "Save" 
+- if Club.find_by(owner: current_user).nil?
+  = link_to "Create Club", new_club_path

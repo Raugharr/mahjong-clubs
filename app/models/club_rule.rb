@@ -1,0 +1,2 @@
+class ClubRule < ApplicationRecord
+end

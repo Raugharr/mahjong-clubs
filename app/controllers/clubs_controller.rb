@@ -1,5 +1,4 @@
 class ClubsController < ApplicationController
-	layout "club-nav"
 	def index
 		@clubs = Club.all;
 	end

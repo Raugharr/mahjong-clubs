@@ -1,0 +1,8 @@
+%h1 Listing clubs
+
+%table
+  %tr
+    %th Name
+  - @clubs.each do |club|
+    %tr
+      %td= club.name

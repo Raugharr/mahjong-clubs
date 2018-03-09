@@ -1,0 +1,2 @@
+class RuleSetRule < ApplicationRecord
+end
